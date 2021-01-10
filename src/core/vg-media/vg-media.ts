@@ -19,7 +19,7 @@ import {timer, combineLatest} from 'rxjs';
 export class VgMedia implements OnInit, OnDestroy, IPlayable {
     elem: any;
 
-    @Input() vgMedia: IMediaElement;
+    @Input() vgMedia: any;
     @Input() vgMaster: boolean;
 
     state: string = VgStates.VG_PAUSED;
